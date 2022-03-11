@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Friend list</title>
+  </head>
+  <body>
+    <script>
+      var friends = [
+        { firstName: 'Priyanka', lastName: 'Patankar' },
+        { firstName: 'Arpita', lastName: 'Kolhatkar' },
+        { firstName: 'Nivedita', lastName: 'Paranjape' },
+        { firstName: 'Ankita', lastName: 'Mayekar' },
+        { firstName: 'Suhana', lastName: 'Shaikh' },
+        { firstName: 'Mrudula', lastName: 'Deosthali' },
+      ];
+
+      for (var a = 0; a < friends.length; a++) {
+        console.log(friends[a].firstName + ' ' + friends[a].lastName);
+      }
+
+      friends.push({ firstName: 'Sadhavi', lastName: 'Malushte' });
+      friends.push({ firstName: 'Rutuja', lastName: 'Raut' });
+      friends.push({ firstName: 'Madhuri', lastName: 'Kapoor' });
+      friends.push({ firstName: 'Kareena', lastName: 'Joshi' });
+      friends.push({ firstName: 'Teejay', lastName: 'Naravane' });
+      friends.push({ firstName: 'Vaibhavi', lastName: 'Sapre' });
+
+      console.log(' ');
+      console.log(
+        'After using JavaScript function push() to add new friends as an object in the list, the output will be as follows:'
+      );
+      console.log(' ');
+      for (var a = 0; a < friends.length; a++) {
+        console.log(friends[a].firstName + ' ' + friends[a].lastName);
+      }
+    </script>
+  </body>
+</html>
